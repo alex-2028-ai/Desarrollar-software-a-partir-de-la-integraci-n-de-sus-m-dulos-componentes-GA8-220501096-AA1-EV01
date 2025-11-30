@@ -1,0 +1,111 @@
+/* Estilos para páginas de autenticación (Login / Register) */
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 16px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+    padding: 32px 28px;
+    text-align: center;
+}
+
+.auth-page h2 {
+    margin: 0 0 18px 0;
+    font-size: 1.6rem;
+    color: #111827;
+    /* gris oscuro */
+}
+
+.auth-form {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+}
+
+.field {
+    text-align: left;
+}
+
+.auth-label {
+    display: block;
+    font-size: 0.95rem;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+.auth-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+    transition: box-shadow 150ms ease, border-color 150ms ease;
+    font-size: 0.95rem;
+    color: #111827;
+}
+
+.auth-input:focus {
+    outline: none;
+    border-color: #6366f1;
+    /* indigo */
+    box-shadow: 0 4px 18px rgba(99, 102, 241, 0.12);
+    background: #fff;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.auth-footer {
+    margin-top: 14px;
+    color: #4b5563;
+}
+
+.auth-footer a {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background: #111827;
+    color: #ffffff;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: #111827;
+    border: 1px solid #e5e7eb;
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 20px;
+        border-radius: 10px;
+    }
+}
