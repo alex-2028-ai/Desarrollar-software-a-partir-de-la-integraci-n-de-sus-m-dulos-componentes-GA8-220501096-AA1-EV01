@@ -13,6 +13,7 @@ export default function Cart() {
         )
     }
 
+    
     return (
         <div>
             <h2>Carrito ({totalCount})</h2>
